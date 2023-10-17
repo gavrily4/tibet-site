@@ -100,6 +100,62 @@ body {
     width: 157px;
 }
 
+.nav__burger-menu-button {
+    display: none;
+    cursor: pointer;
+}
+
+/* Navigation burger menu */
+.nav__modal {
+    background-color: #1A3E3E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 11;
+    padding: 16px;
+    display: none;
+}
+
+.nav__close {
+    width: 24px;
+    height: 24px;
+    color: #FFF;
+    margin-left: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.nav__burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav__burger-menu-item {
+    list-style: url("../img/Group.svg");
+    margin-left: 13px;
+    padding-left: 8px;
+}
+
+.nav__burger-menu-item:hover {
+    list-style: url("../img/Group-yellow.svg");
+}
+
+.nav__burger-menu-item:hover .nav__burger-menu-link {
+    color: #F2BE22;
+    text-decoration: underline;
+}
+
+
+.nav__burger-menu-link {
+    color: #FDFDFD;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+}
+
 .hero {
     max-width: 1180px;
     margin: 0 auto;
@@ -230,6 +286,18 @@ body {
     flex-grow: 1;
 }
 
+.hero_button-mobile {
+    padding: 16px 36px;
+    color: #1A3E3E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.192px;
+    background-color: #FDFDFD;
+    display: none;
+}
+
 
 /* Section Tour */
 .tour {
@@ -238,7 +306,7 @@ body {
 }
 
 .tour__container {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     display: flex;
     gap: 120px;
@@ -280,7 +348,7 @@ body {
 }
 
 .tour__description-container {
-    width: 580px;
+    max-width: 580px;
     padding: 64px 0;
 }
 
@@ -322,12 +390,12 @@ body {
 .proposals__container {
     display: flex;
     gap: 90px;
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
 .proposals__description-container {
-    width: 580px;
+    max-width: 580px;
 }
 
 .proposals__description {
@@ -404,7 +472,7 @@ body {
 
 /* Destinations section */
 .destinations__container {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     
     text-align: center;
@@ -426,6 +494,7 @@ body {
     overflow: hidden;
     border-radius: 0 0 32px 32px;
     cursor: pointer;
+    min-width: 380px;
 }
 
 .destinations__img-wrapper {
@@ -592,7 +661,7 @@ body {
 }
 
 .blog__post-description {
-    width: 294px;
+    max-width: 294px;
     padding: 16px 0;
     display: flex;
     flex-direction: column;
@@ -783,10 +852,15 @@ body {
     font-size: 26px;
     font-weight: 800;
     line-height: 31.2px;
+    margin-bottom: 0;
 }
 
-.subscribe___form {
-    width: 536px;
+.subscribe__form-container {
+    max-width: 536px;
+}
+
+.subscribe__form {
+    margin-bottom: 8px;
 }
 
 .subscribe__label {
@@ -810,7 +884,6 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: 20px; 
-    margin-bottom: 8px;
 }
 
 .subscribe__button {
@@ -834,7 +907,7 @@ body {
 }
 
 .footer__container {
-    width: 1180px;
+    max-width: 1180px;
     display: flex;
     justify-content: space-between;
     align-items: normal;
@@ -950,6 +1023,325 @@ body {
 
 .footer__policy-link {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1180px) {
+    .nav {
+        margin-bottom: 234px;
+    }
+    .header {
+        padding: 20px 16px 50px 29px;
+        margin: 0 auto;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__button {
+        display: none;
+    }
+
+    .nav__burger-menu-button {
+        display: block;
+    }
+
+    .hero__title-main {
+        font-size:40px;
+        line-height: 150%; 
+    }
+
+    .tour__container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 16px;
+    }
+
+    .tour {
+        padding: 50px 0;
+    }
+
+    .tour__img.back {
+        display: none;
+    }
+
+    .tour__link.front {
+        position: static;
+    }
+
+    .tour__link.front .tour__img {
+        margin: 0 auto;
+    }
+
+    .tour__description-container {
+        margin: 0 auto;
+        order: 1;
+        padding: 0;
+    }
+
+    .tour__pictures {
+        width: auto;
+        height: auto;
+        order: 2;
+    }
+
+    .tour__button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .proposals {
+        padding: 50px 16px;
+    }
+
+    .proposals__pictures {
+        display: none;
+    }
+
+    .proposals__description-container {
+        margin: 0 auto;
+    }
+
+    .proposals__button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .destinations__container {
+        text-align: left;
+    }
+
+    .destinations__pictures {
+        overflow: auto;
+        margin-bottom: 32px;
+    }
+
+    .destinations__pictures::-webkit-scrollbar {
+        width: 0;
+      }
+
+    .destinations {
+        padding: 50px 0 50px 16px;
+    }
+
+    .destinations__button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .blog {
+        padding: 50px 0 50px 16px;
+    }
+    
+    .blog__container {
+        display: block;
+    }
+
+    .blog__img-container {
+        width: 285px;
+        height: 280px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .blog__img {
+        width: 285px;
+        height: 280px;
+        transform: translate(0, 0);
+    }
+
+    .blog__post {
+        padding: 0;
+    }
+
+    .blog__posts {
+        display: flex;
+        overflow: auto;
+        max-width: 1180px;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    .blog__posts::-webkit-scrollbar {
+        width: 0;
+      }
+
+    .blog__post {
+        flex-direction: column;
+        max-width: 285px;
+        gap: 0;
+        justify-content: start;
+    }
+
+    .blog__post-description {
+        padding: 16px;
+        height: 48%;
+    }
+
+    .blog__short-description {
+        margin-bottom: 32px;
+    }
+
+    .blog__post-title {
+        margin-bottom: 16px;
+    }
+    
+    .blog__footer {
+        margin-top: 16px;
+    }
+
+    .blog__button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        padding: 50px 0 50px 16px;
+    }
+
+    .gallery__container {
+        display: block;
+    }
+
+    .gallery__pictures {
+        display: flex;
+        overflow: scroll;
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+
+    .gallery__pictures::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .gallery__link {
+        display: block;
+        max-width: 280px;
+        overflow: hidden;
+    }
+
+    .gallery__img {
+        width: auto;
+        height: 250px;
+        margin: 0 auto;
+        /* transform: translate(-25%, 0); */
+    }
+
+    .oversize-mobile {
+        transform: translate(-25%, 0);
+    }
+
+    .gallery__button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .subscribe {
+        padding: 50px 16px;
+    }
+
+    .subscribe__container {
+        flex-direction: column;
+        padding: 24px;
+        margin-bottom: 0;
+        gap: 18px;
+    }
+
+    .subscribe__form {
+        margin-bottom: 24px;
+    }
+
+    .footer__top {
+        padding: 50px 16px 80px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer__about {
+        margin-bottom: 30px;
+    }
+
+    .footer__contacts {
+        margin-bottom: 30px;
+    }
+
+    .footer__bottom .footer__container {
+        gap: 8px;
+        align-items: center;
+        padding: 20px 47px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .nav {
+        margin-bottom: 234px;
+    }
+    .header {
+        padding: 20px 16px 29px 50px;
+        margin: 0 auto;
+    }
+
+    .hero__title-main {
+        font-size: 28px;
+    }
+    
+    .hero__program {
+        display: none;
+    }
+    
+    .hero_button-mobile {
+        display: block;
+    }
+
+    .yellow-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        line-height: 120%; 
+        margin-bottom: 32px;
+    }
+
+    .tour__description {
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 24px;
+    }
+
+    .proposals__description {
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 32px;
+    }
+
+    .propasals__list {
+        margin-bottom: 32px;
+    }
+
+    .blog__post-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .subscribe__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe__short-description {
+        margin-bottom: 0;
+    }
+
+    .subscribe__button {
+        display: block;
+        margin-right: auto;
+    }
 }
 
 

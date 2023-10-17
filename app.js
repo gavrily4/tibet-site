@@ -89,3 +89,17 @@ window.addEventListener('click', (event) => {
     galleryModal.style.display = 'none';
   }
 });
+
+// Burger menu modal
+const navModal = document.getElementById('navModal');
+const closeNavModal = document.getElementById('closeNavModal');
+const burgerButton = document.querySelector('.nav__burger-menu-button');
+
+burgerButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    navModal.style.display = 'block';
+});
+
+closeNavModal.onclick = () => {
+    navModal.style.display = 'none';
+}

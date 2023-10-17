@@ -25,6 +25,24 @@
                     <li class="nav__menu-item"><a href="#" class="nav__menu-link">Контакты</a></li>
                 </ul>
                 <button class="nav__button button">Консультация</button>
+                <img src="img/heroicons-solid_menu-alt-3.svg" alt="burger menu" class="nav__burger-menu-button">
+                <!--Modal burger menu-->
+                <div class="nav__modal" id="navModal">
+                    <!-- <span class="nav__close" id="closeNavModal">&times;</span> -->
+                    <div class="nav__close" id="closeNavModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <ul class="nav__burger-menu">
+                        <li class="nav__burger-menu-item"><a href="#" class="nav__burger-menu-link">Главная</a></li>
+                        <li class="nav__burger-menu-item"><a href="#" class="nav__burger-menu-link">Про гида</a></li>
+                        <li class="nav__burger-menu-item"><a href="#" class="nav__burger-menu-link">Программа тура</a></li>
+                        <li class="nav__burger-menu-item"><a href="#" class="nav__burger-menu-link">Стоимость</a></li>
+                        <li class="nav__burger-menu-item"><a href="#" class="nav__burger-menu-link">Блог</a></li>
+                        <li class="nav__burger-menu-item"><a href="#" class="nav__burger-menu-link">Контакты</a></li>
+                    </ul>
+                </div>
             </nav>
             <section class="hero">
                 <h1 class="hero__title-main">Насладись прогулкой в горах<br>
@@ -69,13 +87,14 @@
                     </div>
                     <button class="hero__button button">Найти программу</button>
                 </div>
+                <button class="hero_button-mobile button">Найти программу</button>
             </section>
         </header>
         <section class="tour">
             <div class="tour__container">
                 <div class="tour__pictures">
                     <!-- <a href="img/photo1.jpeg" class="tour__link"> -->
-                    <img src="img/photo1.jpeg" width="350px" height="400px" alt="Mountains" class="tour__img">
+                    <img src="img/photo1.jpeg" width="350px" height="400px" alt="Mountains" class="tour__img back">
                     <!-- </a> -->
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="tour__link front">
                         <img src="img/photo2.jpeg" width="350px" height="400px" alt="House" class="tour__img">
@@ -334,7 +353,7 @@
                 <div class="gallery__pictures">
                     <div class="gallery__picture">
                         <a href="img/Rectangle1.jpg" class="gallery__link"><img src="img/Rectangle1.jpg" alt="#"
-                                class="gallery__img"></a>
+                                class="gallery__img oversize-mobile"></a>
                         <img src="img/iconamoon_zoom-in-light.svg" alt="#" class="gallery__icon">
                     </div>
                     <div class="gallery__picture">
@@ -354,7 +373,7 @@
                     </div>
                     <div class="gallery__picture">
                         <a href="img/Rectangle5.jpg" class="gallery__link"><img src="img/Rectangle5.jpg" alt="#"
-                                class="gallery__img"></a>
+                                class="gallery__img oversize-mobile"></a>
                         <img src="img/iconamoon_zoom-in-light.svg" alt="#" class="gallery__icon">
                     </div>
                     <div class="gallery__picture">
@@ -377,7 +396,7 @@
                     <h2 class="subscribe__title yellow-title">актуально</h2>
                     <p class="subscribe__short-description subtitle">Получайте полезные рассылки о путешествиях</p>
                 </div>
-                <div class="subscribe___form">
+                <div class="subscribe__form-container">
                     <form action="#" method="post" class="subscribe__form">
                         <label for="emailInput" class="subscribe__label">Введите e-mail адрес</label>
                         <input type="text" name="email" id="emailInput" placeholder="name@domain.com"
