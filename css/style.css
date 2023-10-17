@@ -325,6 +325,8 @@ body {
 
 .tour__img {
     border-radius: 24px;
+    width: 350px;
+    height: 400px; 
 }
 
 .tour__icon {
@@ -839,7 +841,7 @@ body {
 }
 
 .subscribe__titles {
-    width: 380px;
+    max-width: 380px;
 }
 
 .subscribe__title {
@@ -1272,6 +1274,11 @@ body {
         gap: 8px;
         align-items: center;
         padding: 20px 47px;
+    }
+
+    .tour__img {
+        width: 358px;
+        height: 416px;
     }
 
 }
