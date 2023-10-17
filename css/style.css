@@ -878,7 +878,7 @@ body {
     border-radius: 4px;
     background: #F3F5F4;
     border: none;
-    width: 280px;
+    max-width: 280px;
     margin-right: 16px;
     color: #18121E;
     font-family: Nunito Sans;
@@ -1032,7 +1032,7 @@ body {
         margin-bottom: 234px;
     }
     .header {
-        padding: 20px 16px 50px 29px;
+        padding: 20px 16px 50px;
         margin: 0 auto;
     }
 
@@ -1277,8 +1277,8 @@ body {
     }
 
     .tour__img {
-        width: 250px;
-        height: 300px;
+        width: 358px;
+        height: 416px;
     }
 
 }
@@ -1286,10 +1286,6 @@ body {
 @media screen and (max-width: 760px) {
     .nav {
         margin-bottom: 234px;
-    }
-    .header {
-        padding: 20px 16px 29px 50px;
-        margin: 0 auto;
     }
 
     .hero__title-main {
