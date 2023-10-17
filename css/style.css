@@ -1123,7 +1123,7 @@ body {
       }
 
     .destinations {
-        padding: 50px 0 50px 16px;
+        padding: 50px 16px;
     }
 
     .destinations__button {
@@ -1132,7 +1132,7 @@ body {
     }
 
     .blog {
-        padding: 50px 0 50px 16px;
+        padding: 50px 16px;
     }
     
     .blog__container {
@@ -1198,7 +1198,7 @@ body {
     }
 
     .gallery {
-        padding: 50px 0 50px 16px;
+        padding: 50px 16px;
     }
 
     .gallery__container {
@@ -1335,6 +1335,10 @@ body {
     .subscribe__form {
         display: flex;
         flex-direction: column;
+    }
+
+    .subscribe__input {
+        margin-bottom: 16px;
     }
 
     .subscribe__short-description {
