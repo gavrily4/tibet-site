@@ -1131,6 +1131,39 @@ body {
         display: block;
     }
 
+    .destinations__img-container {
+        width: 285px;
+        height: 400px;
+    }
+
+    .destinations__img-wrapper {
+        width: 285px;
+        height: 400px;
+    }
+
+    .destinations__overlay-title {
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .destinations__img-container {
+        min-width: 285px;
+    }
+
+    .destinations__overlay-container {
+        padding: 24px 23px;
+    }
+
+    .destinations__price {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 6px 12px;
+    }
+
+    .destinations__overlay-text {
+        display: none;
+    }
+
     .blog {
         padding: 50px 16px;
     }
